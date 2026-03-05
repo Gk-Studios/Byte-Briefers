@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+        <title>Pa media</title>
+        <style>
+            #b{
+            border: solid 2px rgba(100,100,100,0.3);
+            text-align: center;
+            border-radius: 8px;
+            margin: 5px 0 0 0;
+            font-family: "Newsreader", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            padding: 2.5px 0 1.5px 0;
+            }
+            body{
+            background-color: rgba(0,0,0,0.9);
+            }
+            #search{
+            border: none;
+            border-color: transparent;
+            background-color: rgba(140,140,140,0.5);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 0 transparent;
+            transition: background-color 0.5s ease-in-out;
+            }
+            #search:hover{
+            background-color: rgba(120,120,120,0.5);
+            }
+            #header{
+            font-size: 35px;
+            color: rgba(255,255,255,0.95);
+            text-shadow: 0 0 10px rgba(4,217,255,0.78);
+            padding: 0;
+            margin: 0;
+            }  
+            .options{
+            background-color: rgba(110,110,110,0.7);
+            border: none;
+            border-color: transparent;
+            border-radius: 3px;
+            color: black;
+            font-size: 20px;
+            font-family: "Newsreader", serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            padding: 2.5px 1.5px 2.5px 1.5px;
+            box-shadow: 0 0 transparent;
+            transition: background-color 0.75s ease-in-out, box-shadow 0.75s ease-in-out;
+            }
+            .options:hover{
+            background-color: rgba(100,100,100,0.7);
+            box-shadow: 0 7.5px 3px -1.5px rgba(80,80,80,0.5);
+            }
+            .option1{
+            padding: 2.5px 1px 2.5px 1px;
+            margin: 0 2.5px 0 2.5px;
+            }
+            #option2{
+            padding: 2.5px 1px 2.5px 1px;
+            margin: 0 2.5px 0 2.5px;
+            }
+            .pointer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            width: 2rem;
+            aspect-ratio: 1;
+            background-color: rgba(255,255,255,0.35);
+            border: solid 2px transparent;
+            border-radius: 100%;
+            pointer-events: none;
+            transform: translate3d(var(--mouseX, 0), var(--mouseY, 0), 0) translate(-50% ,-50% );
+            transition: 0.3s ease-out;
+            transition-property: transform, width, border, background-color;
+            }
+            body:has(.options:hover) .pointer{
+            width: 4rem;
+            background-color: transparent;
+            border-color: rgba(255,255,255,0.5);
+            }
+            #wel{
+            font-family: "Newsreader", serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            color: rgba(255,255,255,0.75);
+            }
+            //#a{
+            //background-color: transparent;
+            //width: 100%;
+            //font-family: "Newsreader", serif;
+            //font-optical-sizing: auto;
+            //font-weight: 300;
+            //font-style: normal;
+            //color: white;
+            //margin: 5px 0 5px 0;
+
+            //}
+            .G{
+            color: rgba(255,255,255,0.8);
+            text-align: center;
+            font-family: "Newsreader", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 30px;
+            margin: 15px 0 0 0;
+            padding: 0;
+            }
+            .G1{
+            color: rgba(255,255,255,0.8);
+            text-align: center;
+            font-family: "Newsreader", serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 25px;
+            margin: 10px 0 0 0;
+            padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pointer" aria-hidden="true"></div>
+        <div id="search">
+            <div id="option2">
+                <button class="options" onclick="location.href='index.html'">Home</button>
+            </div>
+            <div class="option1">
+                <button class="options" onclick="location.href='Weekly.html'">Monthly News</button>
+            </div>
+            <div class="option1">
+                <button class="options" onclick="location.href='Credits2.html'">Credits</button>
+            </div>
+            <div class="option1">
+                <button class="options" onclick="location.href='founders.html'">Our Founders</button>
+            </div>
+        </div>
+        <div id="b">
+            <p id="header">About the Founders</p>
+        </div>
+        <div id="bo">
+            <!--<p id="wel">
+            Welcome to [nameidk]     
+            </p>-->
+            <!--<marquee scrollamount="4" direction="right" id="a">Presented to you by George and Brentyn</marquee>-->
+        </div>
+        <div id="main-container">
+           <p class="G">George Li</p>
+           <p class="G1">My name is George Li and as of March 3rd, I am 11 years old and in 6th grade. I was born in Maryland, and I like to code, play sports and more.
+          I have been learning Full Stack (HTML, CSS, Javascript) for around 6 months. I am an only child and my favorite school subject is math.
+          I want to be a computer scientist when I grow up.
+          </p>
+           <p class="G">Brentyn Pan</p>
+           <p class="G1">Hi, my name is Brentyn. I am 12 years old and in 6th grade. I was born in Iowa, and I have a sister and two dogs. My favorite subject is math, and I like to play baseball and play video games.
+            I have absolutely no idea what I want to be when I grow up.
+           </p>
+        </div>
+        <script>
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const finePointerQuery = window.matchMedia('(pointer: fine)');
+const hoverQuery = window.matchMedia('(hover: hover)');
+const pointer = document.querySelector('.pointer');
+function setupPointer() {
+  const shouldRun =
+    !prefersReducedMotion &&
+    finePointerQuery.matches &&
+    hoverQuery.matches;
+  if (!pointer) return;
+  if (!shouldRun) {
+    pointer.style.display = 'none';
+    return;
+  }
+  pointer.style.display = 'block';
+  let mouseX = 0;
+  let mouseY = 0;
+  let frame = null;
+  const update = () => {
+    pointer.style.setProperty('--mouseX', mouseX + 'px');
+    pointer.style.setProperty('--mouseY', mouseY + 'px');
+    frame = null;
+  };
+  window.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    if (!frame) {
+      frame = requestAnimationFrame(update);
+    }
+  });
+}
+setupPointer();
+        </script> 
+    </body>
+</html>
