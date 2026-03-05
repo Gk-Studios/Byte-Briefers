@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+        <title>Pa media</title>
+        <style>
+            #b{
+            border: solid 2px rgba(100,100,100,0.3);
+            text-align: center;
+            border-radius: 8px;
+            margin: 5px 0 0 0;
+            font-family: "Newsreader", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            padding: 2.5px 0 1.5px 0;
+            }
+            body{
+            background-color: rgba(0,0,0,0.9);
+            }
+            #search{
+            border: none;
+            border-color: transparent;
+            background-color: rgba(140,140,140,0.5);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 0 transparent;
+            transition: background-color 0.5s ease-in-out;
+            }
+            #search:hover{
+            background-color: rgba(120,120,120,0.5);
+            }
+            #header{
+            font-size: 35px;
+            color: rgba(255,255,255,0.95);
+            text-shadow: 0 0 10px rgba(4,217,255,0.78);
+            padding: 0;
+            margin: 0;
+            }  
+            .options{
+            background-color: rgba(110,110,110,0.7);
+            border: none;
+            border-color: transparent;
+            border-radius: 3px;
+            color: black;
+            font-size: 20px;
+            font-family: "Newsreader", serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            padding: 2.5px 1.5px 2.5px 1.5px;
+            box-shadow: 0 0 transparent;
+            transition: background-color 0.75s ease-in-out, box-shadow 0.75s ease-in-out;
+            }
+            .options:hover{
+            background-color: rgba(100,100,100,0.7);
+            box-shadow: 0 7.5px 3px -1.5px rgba(80,80,80,0.5);
+            }
+            .option1{
+            padding: 2.5px 1px 2.5px 1px;
+            margin: 0 2.5px 0 2.5px;
+            }
+            #option2{
+            padding: 2.5px 1px 2.5px 1px;
+            margin: 0 2.5px 0 2.5px;
+            }
+            .pointer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            width: 2rem;
+            aspect-ratio: 1;
+            background-color: rgba(255,255,255,0.35);
+            border: solid 2px transparent;
+            border-radius: 100%;
+            pointer-events: none;
+            transform: translate3d(var(--mouseX, 0), var(--mouseY, 0), 0) translate(-50% ,-50% );
+            transition: 0.3s ease-out;
+            transition-property: transform, width, border, background-color;
+            }
+            body:has(.options:hover) .pointer{
+            width: 4rem;
+            background-color: transparent;
+            border-color: rgba(255,255,255,0.5);
+            }
+            #wel{
+            font-family: "Newsreader", serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            color: rgba(255,255,255,0.75);
+            }
+            #ee{
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            color: white;
+            text-shadow: 0 0 5px rgb(4,217,255);
+            }
+            .g{
+            color: rgba(255,255,255,0.8);
+            text-align: center;
+            font-family: "Newsreader", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 35px;
+            }
+            .ss{
+            color: rgba(255,255,255,0.8);
+            font-size: 25px;
+            text-align: center;
+            font-family: "Newsreader", serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pointer" aria-hidden="true"></div>
+        <div id="search">
+            <div id="option2">
+                <button class="options" onclick="location.href='index.html'">Home</button>
+            </div>
+            <div class="option1">
+                <button class="options" onclick="location.href='Weekly.html'">Monthly News</button>
+            </div>
+            <div class="option1">
+                <button class="options" onclick="location.href='Credits2.html'">Credits</button>
+            </div>
+            <div class="option1">
+                <button class="options" onclick="location.href='founders.html'">Our Founders</button>
+            </div>
+        </div>
+        <div id="b">
+            <p id="header">How LLMs work</p>
+            <p id="ee">or Large Language Models like ChatGpt </p>
+        </div>
+        <div id="bo">
+        </div>
+        <div id="main-container">
+            <h2 class="g">Monthly Question</h2>
+            <p class="ss">LLMs or Large Language Models like AI chat bots are some things lots of people use daily, but have you ever wondered how they work?</p>
+            <h2 class="g">First, What are they?</h2>
+            <p class="ss">Well, Large Language Models, or LLMs, are very complicated and it is very hard to explain, so 
+            we are going to explain a crude version of it. LLMs are a type of AI that is designed to understand, generate,
+            and process our language or daily speech.
+            LLMs mainly consist of billions to trillions of parameters. These parameters are trained by analyzing millions of batchs of text and human interactions to try to be able to 
+            predict a response. They are basically an input and ouput algorithim, but these simple algorithims struggle with
+            complex inputs or or a lot of variables. So this is where Neural Networks come in, these networks can compute extremely complex situations.
+            They simply consist of multiple layers of connected processors or "neurons" that handle small inputs at a time. They are
+            basically lots of simple linear algorithims combined to predict an arbitrary or nonlinear outcome.
+            Advanced models like ChatGPT have around almost 176 billion "neurons".
+             <a href="https://medium.com/data-science-at-microsoft/how-large-language-models-work-91c362f5b78f" style="color:B8F1FF;"">Click here</a> for Medium's take of this.
+            </p>
+            <h2 class="g">History of the LLM</h2>
+            <p class="ss">
+                LLMs have come a long way. From their beginnings as simple algirithoms, to these very powerful and complicated machines.
+                Lets look at the very beginning. Large Language Models (LLMs) first began in 1966 with ELIZA, a plain chatbot that mimicked
+                conversations, using predefined rules but didn't have true understanding.
+                From 1974-1980, scientists dealed with 2 main problems: the programs processed extremely slow,
+                and it couldn't hold big batchs of data. In the 1980, IBM created a small neural network model that tried to predict 
+                the next word in a sentence after "analyzing" it using a "dictionary". The "dictionary" helped the algirithom find how 
+                often a word is typically used in a conversation/text. Later more advanced GPUs (Graphic Processing Unit) were introduced
+                allowing models to be faster, stronger , and more reliable. In the 1990s Deep Machine Learning was introduced along with the World Wide
+                Web which helped create even more sophisticated machines. The World Wide Web allowed LLMs to access massive amounts of information.
+                GPUs helped accelerate neural networks since they helped them quickly proccess images or batchs of text.
+                Deep Machine Learning allowed neural nerworks to be pre-trained on large sets of data, but it only got popular in the 2010s.
+                Neural networks that were trained with Deep Machine Learning eventually became LLMs or Large Language Models later.
+                In 2014, the concept of Generative Adversarial Neural Network was introduced where 2 neural networks genrate a photo and 
+                the other looked at it and would find flaws and give feedback. This continued exchanging between them until one of the 
+                neural networks generated a image that the other neural network couldn't detect any flaws.
+                This is important since it can show how these neural networks are able to replicate or mimic real life objects or animals
+                through an image. Finally in 2022 OpenAI released ChatGPT, a chatbot that could accurately communicate in normal and human-like speech.
+                It could also perform a range of tasks like writing an essay, generating an image or more.
+                <a href="https://www.dataversity.net/articles/a-brief-history-of-large-language-models/" style="color: white;">Click here</a>
+                for Dataversitys' timeline.
+            </p>
+            <h2 class="g">Uses of LLMs</h2>
+            <p class="ss">
+            There are many uses of LLMs whether personal or professional, we can agree that LLMs have become an important part of some peoples everyday life.
+            Here are some main ways some people use LLMs:
+            <br>1. Data Analysis: These are typically used for Spoken Data Analysis because they can turn an long recording for example a few hours into summaries or 
+            insights really quickly. This can help save time and boost productivity in the professional world since now, they dont have to listen 
+            to the whole recording.
+            <br>2. Content Creation: There are many people use LLMs for Content Creation for reasons like inspiration, helping to complete araticles, reports , and etc.
+            LLMs help writers, marketers, and more.
+            <br>3. Language translation and localization: LLMs can help companys or businesses achieve a wider audience. This can be used in appliances like websites,
+            articles, and more. LLMs can accurately and effectively translate things quickly so people can save time and energy.
+            <br>4. Education and Training: LLMs can help people like teachers help create a personalized education for others. LLMs can for example
+            create questions, help to tutor, or create a learning level fit for the student.
+            <br>5. Cybersecurity: LLMs can help with cybersecurity by analyzing massive amounts of security data to spot an anomanly or pattern that could be missed by human analysts.
+            LLMs can sometimes be more reliable and effective than human analysts which is why lots of businesses use them.
+            </p>
+        </div>
+        <script>
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const finePointerQuery = window.matchMedia('(pointer: fine)');
+const hoverQuery = window.matchMedia('(hover: hover)');
+const pointer = document.querySelector('.pointer');
+function setupPointer() {
+  const shouldRun =
+    !prefersReducedMotion &&
+    finePointerQuery.matches &&
+    hoverQuery.matches;
+  if (!pointer) return;
+  if (!shouldRun) {
+    pointer.style.display = 'none';
+    return;
+  }
+  pointer.style.display = 'block';
+  let mouseX = 0;
+  let mouseY = 0;
+  let frame = null;
+  const update = () => {
+    pointer.style.setProperty('--mouseX', mouseX + 'px');
+    pointer.style.setProperty('--mouseY', mouseY + 'px');
+    frame = null;
+  };
+  window.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    if (!frame) {
+      frame = requestAnimationFrame(update);
+    }
+  });
+}
+setupPointer();
+        </script> 
+    </body>
+</html>
