@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+        <title>Pa media</title>
+    <style>
+        body{
+            background-color: rgba(0,0,0,0.9);
+        }
+        .pointer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            width: 2rem;
+            aspect-ratio: 1;
+            background-color: rgba(255,255,255,0.35);
+            border: solid 2px transparent;
+            border-radius: 100%;
+            pointer-events: none;
+            transform: translate3d(var(--mouseX, 0), var(--mouseY, 0), 0) translate(-50% ,-50% );
+            transition: 0.4s ease-out;
+            transition-property: transform, width, border, background-color;
+        }
+        #n{
+            color: rgba(255,255,255,0.9);
+            text-align: center;
+            font-size: 35px;
+            text-shadow: 0 0 10px rgba(4,217,255,0.78);
+            padding: 0;
+            margin: 0;
+        }
+        #i{
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+            border: solid 2px rgba(100,100,100,0.3);
+            text-align: center;
+            border-radius: 8px;
+            margin: 5px 0 0 0;
+            font-family: "Newsreader", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            padding: 2.5px 0 1.5px 0;
+        }
+        #search1{
+            border: none;
+            border-color: transparent;
+            background-color: rgba(140,140,140,0.5);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 0 transparent;
+            transition: background-color 0.5s ease-in-out;
+            
+        }
+        #search1:hover{
+            background-color: rgba(120,120,120,0.5);
+        } 
+        .options1{
+            background-color: rgba(110,110,110,0.7);
+            border: none;
+            border-color: transparent;
+            border-radius: 3px;
+            color: black;
+            font-size: 20px;
+            font-family: "Newsreader", serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            padding: 2.5px 1.5px 2.5px 1.5px;
+            box-shadow: 0 0 transparent;
+            transition: background-color 0.75s ease-in-out, box-shadow 0.75s ease-in-out;
+        }
+        .options1:hover{
+            background-color: rgba(100,100,100,0.7);
+            box-shadow: 0 7.5px 3px -1.5px rgba(80,80,80,0.5);
+        }
+        .option11{
+            padding: 2.5px 1px 2.5px 1px;
+            margin: 0 2.5px 0 2.5px;
+            }
+        #option21{
+            padding: 2.5px 1px 2.5px 1px;
+            margin: 0 2.5px 0 2.5px;
+        }           
+        body:has(.options1:hover) .pointer{
+            width: 4rem;
+            background-color: transparent;
+            border-color: rgba(255,255,255,0.5);
+        }
+        .hh a{
+        color: rgb(255,255,255);
+        text-decoration: none;
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        }
+        .hh{
+           text-align: center;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 20px
+        }
+        #ui {
+        padding: 0;
+        margin: 0;
+        //border: solid 3px rgba(140,140,140,0.56);
+        }
+    </style>
+</head>
+<body>
+    <div class="pointer" aria-hidden="true"></div>
+    <div id="search1">
+            <div id="option21">
+                <button class="options1" onclick="location.href='index.html'">Home</button>
+            </div>
+            <div class="option11">
+                <button class="options1" onclick="location.href='Weekly.html'">Monthly News</button>
+            </div>
+            <div class="option11">
+                <button class="options1" onclick="location.href='Credits2.html'">Credits</button>
+            </div>
+            <div class="option11">
+                <button class="options1" onclick="location.href='founders.html'">Our Founders</button>
+            </div>
+        </div>
+    <div id="i">
+    <p id="n">Credits</p>
+    </div>
+    <div id="ui">
+    <p class="hh" id="k">
+      <a href="https://www.w3schools.com" >W3spaces - Code editor</a>
+    </p>
+    <p class="hh" id="r">
+      <a href="https://www.github.com" >Github - Code launcher</a>
+    </p>
+    <p class="hh" id="h">
+      <a href="https://www.netlify.com/$0">Netlify - Code launcher</a>
+    </p>  
+    <p class="hh">
+        <a href="https://www.youtube.com/watch?v=1o3IToGRSoI&t=403s$0">Youtube - Cursor Animation</a>
+    </p>
+    <p class="hh">
+        <a href="https://medium.com/data-science-at-microsoft/how-large-language-models-work-91c362f5b78f$0">Medium - LLM Research</a>
+    </p>
+    <p class="hh">
+        <a href="https://www.dataversity.net/articles/a-brief-history-of-large-language-models/$0">Dataversify - LLM Research</a>
+    </p>
+    <p class="hh">
+        <a href="https://www.geeksforgeeks.org/blogs/history-and-evolution-of-llms/$0">Geeksforgeeks - LLM Research</a>
+    </p>
+    <p class="hh">
+        <a href="https://www.assemblyai.com/blog/llm-use-cases"> AssemblyAI - LLM Research</p>
+    </p>
+    <p class="hh">
+    <a href="https://chatgpt.com/$0"> ChatGPT - Code Debugger</a>
+    </div>
+<script>
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const finePointerQuery = window.matchMedia('(pointer: fine)');
+const hoverQuery = window.matchMedia('(hover: hover)');
+const pointer = document.querySelector('.pointer');
+function setupPointer() {
+  const shouldRun =
+    !prefersReducedMotion &&
+    finePointerQuery.matches &&
+    hoverQuery.matches;
+  if (!pointer) return;
+  if (!shouldRun) {
+    pointer.style.display = 'none';
+    return;
+  }
+  pointer.style.display = 'block';
+  let mouseX = 0;
+  let mouseY = 0;
+  let frame = null;
+  const update = () => {
+    pointer.style.setProperty('--mouseX', mouseX + 'px');
+    pointer.style.setProperty('--mouseY', mouseY + 'px');
+    frame = null;
+  };
+  window.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    if (!frame) {
+      frame = requestAnimationFrame(update);
+    }
+  });
+}
+setupPointer();
+</script>
+</body>
+</html>
